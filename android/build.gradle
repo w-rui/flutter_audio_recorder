@@ -23,6 +23,8 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
+    
+    if (project.android.hasProperty("namespace")) namespace "com.zeno.flutter_audio_recorder"
 
     defaultConfig {
         minSdkVersion 16
